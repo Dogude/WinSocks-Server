@@ -6,9 +6,12 @@ struct sockaddr {
     unsigned short sa_family;    // 2 Byte AF_INET, AF_BLUETOOTH vb.)
     char           sa_data[14];  // 14 Byte
 }; 
+
 * When (SOCKADDR*)&serverAddr passed to functions (bind,accept...) ,
 * Function checks first two bytes (which is common in both structures) ,
-* and decides whether it is a ipv4 address or not , then simply reads that memory for struct sockaddr_in definition. 
+* and decides whether it is a ipv4 address or not , then simply reads that memory for struct sockaddr_in definition.
+
+  
 struct sockaddr_in {
     short          sin_family;   // 2 Byte (AF_INET)
     unsigned short sin_port;     // 2 Byte (Port )
