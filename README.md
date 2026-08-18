@@ -24,10 +24,10 @@ struct sockaddr_in {
 };
 </code></pre>
 
-Pseudo Base Struct => struct sockaddr
-Pseudo Derived Struct => struct sockaddr_in
-
-*** Result = Pointing derived struct with base pointer *** 
+# OOP Analogy:
+# Pseudo Base Struct => struct sockaddr
+# Pseudo Derived Struct => struct sockaddr_in
+# Result: Pointing to a derived struct using a base struct pointer.
 
 AF_INET (2) → Treats memory as struct sockaddr_in
 
