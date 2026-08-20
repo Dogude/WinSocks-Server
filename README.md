@@ -1,5 +1,6 @@
 ## Windows Sockets Experiment
 * Program listens on 127.0.0.1:8080 then sends a "Success" string to client(browser etc.)
+* Requires a Visual Studio C++ Desktop Development toolset and link with ws2_32.dll
 
 # Analyzing Structures ( C style Polymorphism )
 
